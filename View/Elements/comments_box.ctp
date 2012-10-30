@@ -1,0 +1,1 @@
+<div class="fb-comments" data-href="http://fullportadas.com/<?php echo $cover['Review'][0]['url']; ?>" data-num-posts="10" data-width="410"></div>

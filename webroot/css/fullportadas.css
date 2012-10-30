@@ -1,0 +1,73 @@
+@CHARSET "UTF-8";
+
+body { background-color:#0088cc; }
+
+.sep_5px { margin-top:5px; }
+.sep_10px { margin-top:10px; }
+
+.bg_white { background-color:#ffffff; }
+
+#div_left { width:630px; }
+
+#div_aside_left { float:left; width:200px; }
+#div_content { float:right; width:420px; }
+
+.div_sideheader_left { width:200px; background-color:#00599f; color:#ffffff; font-weight:bold; }
+.div_sidecontent_left { padding-top:5px; padding-bottom:10px; width:200px; background-color:#dfe9f4; }
+
+.div_sideheader_right { background-color:#00599f; color:#ffffff; font-weight:bold; }
+.div_sideheader_right h2 { font-size:13px; margin-bottom:0px; }
+.div_sidecontent_right { background-color:#dfe9f4; margin-bottom:5px;}
+.div_sidecontent_right_tcover { width:300px; height:60px; }
+.div_sidecontent_right_tcover_img { float:left; margin-top:5px; width:50px; height:50px; border:#00599f; border-width:1px; border-style:solid; }
+.div_sidecontent_right_tcover_title { float:right; width:240px; margin-top:10px; }
+.div_sidecontent_right_tcover_title a {  }
+
+.div_header_center { width:420px; height:20px; background-color:#93b0cc; }
+.div_header_center h1 { font-size:13px; color:#ffffff; }
+.div_content_center_cover { width:420px; height:100px; border-bottom:#93b0cc; border-bottom-width:1px; border-bottom-style:solid; }
+.div_content_center_cover_img { margin-top:5px; margin-left:0px; float:left; width:90px; height:90px; }
+.div_content_center_cover_text { float:right; width:320px; height:100px; }
+.div_content_center_cover_text h2 { font-size:15px; margin-bottom:0px; }
+.div_content_center_cover_text p { font-size:12px; }
+.div_footer_center div { margin-top:5px; margin-left:265px;  }
+
+#cover_v { background-color:#dfe9f4; }
+#cover_view { margin-left:45px; width:850px; position:relative; }
+#cover_view_ads { width:728px; height:90px; margin-left:55px; }
+#cover_view_cover { width:850px; height:315px; background-color:#c5c5c5; }
+#cover_view_avatar { width:170px; height:170px; position:absolute; top:288px; left:23px; }
+#cover_view_title { width:850px; height:60px; background-color:#ffffff; }
+#cover_view_title h1 { line-height:55px; margin-left:205px; margin-bottom:0px;  }
+#cover_view_content { width:850px; height:82px; background-color:#ffffff }
+.cover_view_content_box_desc { width:485px; }
+.cover_view_content_box_action { width:165px; }
+.cover_view_content_box { height:80px; background-color:#dfe9f4; border:#93b0cc; border-width:1px; border-style:solid; }
+
+#cover_view_content_desc { float:left; }
+#cover_view_content_desc div { margin-top:0px; margin-left:5px; }
+#cover_view_content_desc span, #cover_view_content_desc a { font-size:10px; font-family:Verdana; font-weight:bold; }
+
+#cover_view_content_like { float:left; margin-left:10px; }
+#cover_view_content_like div { margin-top:5px; margin-left:40px; }
+#cover_view_content_down { float:right; margin-right:10px; }
+#cover_view_content_down div { margin-top:19px; margin-left:7px; }
+
+#div_footer { color:#666666; background-color:#333333; width:960px; height:80px; }
+#div_footer div { padding:15px 0px 0px 50px; }
+
+
+.div_list_item { position:relative; width:420px; height:155px; margin-bottom:5px; }
+.div_list_item_image { width:420px; height:155px; }
+.div_list_item_description { display:none; position:absolute; width:420px; height:155px; top:0px; left:0px; width:420px; height:155px; }
+.div_list_item_description h2 { margin:10px 10px 10px 10px; line-height:25px; }
+.div_list_item_description p { margin-left:10px; margin-right:10px; color:#ffffff; }
+.div_list_item_description a.btn_ver { bottom:10px; right:10px; position:absolute; color:#ffffff; }
+.div_list_item_background { display:none; background-color:#000000; position:absolute; width:420px; height:155px; top:0px; left:0px; opacity:0.9; filter:alpha(opacity=90); }
+.div_list_item:hover .div_list_item_description,
+.div_list_item:hover .div_list_item_background { display:block; }
+
+#div_paginate { text-align:center; width:420px; height:21px; }
+#div_paginate span { font-family:Verdana; font-size:10px; background-color:#dfe9f4; padding:5px; border:#00599f 1px solid; }
+
+#div_ads_left { width:200px; height:600px; background-color:#dfe9f4; }

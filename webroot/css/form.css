@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+
+div#flashMessage { width:900px; padding:10px 20px 10px 20px; font-size:16px; }
+div.div_error { background-color:#ff8a8a; color:#ff3535; }
+div.div_sent { background-color:#8cfa7d; color:#328626; }
