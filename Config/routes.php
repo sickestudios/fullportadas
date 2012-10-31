@@ -438,6 +438,7 @@
 	Router::redirect('/2012/06/max-payne-3-con-escopeta.html', '/max-payne-3-con-escopeta', array('status' => 302)); 
 	
 	Router::redirect('/2012/05/manchester-unite-bandera.html', '/manchester-unite-bandera', array('status' => 302)); 
+	Router::redirect('/2012/05/portada-facebook-corazon-espada.html', '/corazon-espada', array('status' => 302)); 
 	
 	Router::redirect('/2012/05/portada-facebook-manchester-unite-logo.html', '/manchester-unite-logo', array('status' => 302)); 
 	
@@ -1048,9 +1049,11 @@
 	Router::redirect('/2010/04/portada-facebook-coldplay.html', '/coldplay', array('status' => 302)); 
 	Router::redirect('/2010/04/portada-facebook-coldplay-paradise.html', '/coldplay-paradise', array('status' => 302)); 	
 	Router::redirect('/2010/04/portada-facebook-christina-aguilera.html', '/christina-aguilera', array('status' => 302)); 
-	Router::redirect('/2010/04/portada-facebook-chica-en-bikini.html', '/chica-en-bikini', array('status' => 302)); 
+	Router::redirect('/2010/04/portada-facebook-chica-en-bikini.html', '/chica-en-bikini', array('status' => 302));  
+	
 	Router::redirect('/p/paquete-de-portadas-para-facebook.html', '/paquete-portadas-para-facebook', array('status' => 302)); 
-	Router::redirect('/p/pack-covers-for-facebook.html', '/pack-covers-for-facebook', array('status' => 302)); 
+	Router::redirect('/p/pack-covers-for-facebook.html', '/pack-covers-for-facebook', array('status' => 302));
+		 
 	
 /**
  * Load all plugin routes.  See the CakePlugin documentation on
