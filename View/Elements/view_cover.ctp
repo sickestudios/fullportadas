@@ -21,7 +21,14 @@
 				<?php echo $this->Html->tag('meta',NULL, array('itemprop' => 'name', 'content'=>$cover['Review'][0]['title']));?>
 				<?php echo $this->Html->tag('meta',NULL, array('itemprop' => 'datePublished', 'content'=>$cover['Review'][0]['created']));?>				
 				<?php echo $this->Html->image('stars_'.$cover['Cover']['score'].'.jpg'); ?> <span>Autor: </span><a href="https://plus.google.com/109796589522847693203" target="_blank" rel="publisher,nofollow" itemprop="author">fullportadas.com</a>
-				<?php echo $this->Html->tag('p',$cover['Review'][0]['description'], array('class' => '', 'itemprop'=>'reviewBody'));?>
+				<?php
+				if($cover['Review'][0]['status'] == 'completed') {
+					$review_description = $cover['Review'][0]['description'];
+				} else {
+					$review_description = "";
+				}
+				?>
+				<?php echo $this->Html->tag('p',$review_description, array('class' => '', 'itemprop'=>'reviewBody'));?>
 				<span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" >
 					<?php echo $this->Html->tag('meta',NULL, array('itemprop' => 'ratingValue', 'content'=>$cover['Cover']['score']));?>
 				</span>

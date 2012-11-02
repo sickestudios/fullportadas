@@ -4,6 +4,12 @@
 <div class="div_content_center">
 	<?php foreach ($covers as $cover): ?>
 	<?php
+	if($cover['Review']['status'] == 'completed') {
+		$review_description = $cover['Review']['description'];
+	} else {
+		$review_description = "";
+	}
+	//--
 	echo
 		$this->Html->tag(
 			'div',
@@ -15,7 +21,7 @@
 			$this->Html->tag(
 				'div',
 				$this->Html->tag('h2',$this->Html->link($cover['Review']['title'],'/'.$cover['Review']['url'])).
-				$this->Html->tag('p',$cover['Review']['description']).
+				$this->Html->tag('p',$review_description).
 				$this->Html->link('Ver Portada','/'.$cover['Review']['url'],array('class'=>'btn btn-primary btn_ver','title'=> __('Ver Portada ').$cover['Review']['title'])),
 				array('class'=>'div_list_item_description')),
 			array('class'=>'div_list_item', 'title'=>$cover['Review']['title'])
