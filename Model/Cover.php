@@ -25,7 +25,7 @@ class Cover extends AppModel {
 	public $hasMany = array(
 		'Review' => array(
 	    	'className'     => 'Review',
-	    	'conditions'    => array('Review.published' => '1','Review.language_id' => '3'),
+	    	'conditions'    => array('Review.published' => 1,'Review.language_id' => 3),
 		)
 	);
 	    

@@ -146,14 +146,20 @@ class CoversController extends AppController {
 		$cover_url = $this->params['coverurl'];
 		$this->loadModel('Review'); 
 		//
-		$arr_covers = $this->Review->find('list',array('fields'=>array('Review.url','Review.cover_id'),'conditions'=>array('language_id'=>3)));
+		$arr_covers = $this->Review->find('list',array('fields'=>array('Review.url','Review.cover_id'),'conditions'=>array('Review.language_id'=>3)));
+		$arr_covers_idReview = $this->Review->find('list',array('fields'=>array('Review.url','Review.id'),'conditions'=>array('Review.language_id'=>3)));
+		
+		//Debugger::dump($arr_covers);
 		//
 		if (array_key_exists($cover_url,$arr_covers)) {
 			$id = $arr_covers[$cover_url];
-			$this->Review->id = $id;
+			$id_review = $arr_covers_idReview[$cover_url];
+			
+
+			$this->Review->id = $id_review;
 			$this->Review->updateAll(
 				array('Review.view '=>'Review.view+1'),
-				array('Review.id'=>$id)
+				array('Review.id'=>$id_review)
 			);			
 			//$arr_cover_data = $this->Review->read(array('Review.title','Review.description_default','Review.description','Review.keywords_default','Review.keywords','Review.cover_id'), $id);
 			$arr_cover_data = $this->Cover->read(null, $id);
